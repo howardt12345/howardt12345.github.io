@@ -10,7 +10,7 @@ environment:
 dependencies:
   angular: ^4.0.0
   angular_components: ^0.8.0
-  peanut: ^2.0.0
+  peanut: ^1.0.0
 
 dev_dependencies:
   angular_test: ^1.0.0
@@ -26,6 +26,8 @@ transformers:
 - test/pub_serve:
     $include: test/**_test.dart
 - dart_to_js_script_rewriter
+- $dart2js:
+    minify: true
 
 # Uncomment the following in sdk 1.24+ to make pub serve
 # use dartdevc (webdev.dartlang.org/tools/dartdevc).
