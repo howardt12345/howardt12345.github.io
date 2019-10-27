@@ -7,13 +7,17 @@ import 'todo_list_service.dart';
 
 @Component(
   selector: 'todo-list',
-  styleUrls: const ['todo_list_component.css'],
+  styleUrls: ['todo_list_component.css'],
   templateUrl: 'todo_list_component.html',
-  directives: const [
-    CORE_DIRECTIVES,
-    materialDirectives,
+  directives: [
+    MaterialCheckboxComponent,
+    MaterialFabComponent,
+    MaterialIconComponent,
+    materialInputDirectives,
+    NgFor,
+    NgIf,
   ],
-  providers: const [TodoListService],
+  providers: [ClassProvider(TodoListService)],
 )
 class TodoListComponent implements OnInit {
   final TodoListService todoListService;
@@ -34,6 +38,4 @@ class TodoListComponent implements OnInit {
   }
 
   String remove(int index) => items.removeAt(index);
-  void onReorder(ReorderEvent e) =>
-      items.insert(e.destIndex, items.removeAt(e.sourceIndex));
 }
