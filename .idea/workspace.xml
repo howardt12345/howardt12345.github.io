@@ -16,6 +16,7 @@
   <component name="ProjectId" id="1Sm9S31M2zu21hJLiubdZLnjg7T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
   </component>
