@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 An absolute bare-bones web app.
 
 Created from templates made available by Stagehand under a BSD-style
